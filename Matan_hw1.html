@@ -1,0 +1,92 @@
+<html>
+<title>GalGdot</title>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'
+        href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <style>
+	#div1 {
+		font-style: italic;
+	}
+	
+	.card {
+	  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	  transition: 0.3s;
+	  width: 40%;
+	  margin-left:10cm;
+	  background-color:#F5F5F5	
+	}
+
+	.card:hover {
+	  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+
+	.container {
+	  padding: 2px 16px;
+	}
+	
+	h2{
+		text-align:center
+	}
+	p{
+		text-align:center
+	}
+	
+	button {
+		position: absolute;
+		color: red;
+		font-size: 30px;
+		text-decoration: Like;
+	}
+	
+	.fa {
+		cursor:pointer;
+		color:red;
+		font-size:25px;
+		margin-right:5px;
+		}
+		
+	.cover {
+	  object-fit: cover;
+	  width: 100%;
+	  height: 100%;
+	}
+	
+	#backArrow{
+		cursor:pointer;
+		font-size:25px;
+	}
+    </style>
+	
+		<body>
+			<div class="card">
+			  <img class="cover" src="https://www.20il.co.il/wp-content/uploads/2018/08/%D7%92%D7%9C-%D7%92%D7%93%D7%95%D7%AA.jpg" alt="Avatar">
+			  <div class="container">
+				<h2><b><a href="https://he.wikipedia.org/wiki/%D7%92%D7%9C_%D7%92%D7%93%D7%95%D7%AA" style="color:black">Gal Gadot</a></b></h2> 
+				<p><i class="fas fa-phone" style="margin-right:5px"></i>0548180832</p> 
+				<p><i class="fas fa-envelope" style="margin-right:5px"></i>galush@gmail.com</p> 
+				<p style="width: 100%; color: black"><a type="button" onClick="onClick()"><i class="fa fa-heart"></i></a>  Likes: <a id="Like">0</a></p>
+				
+			  </div>
+			  <span><i id="backArrow" class="fas fa-arrow-left"></i>
+				<a class="" href="" style="font-size:20px"></a>
+				</span>
+			</div>
+			
+			<script type="text/javascript">
+				var clicks = 0;
+				function onClick() {
+					clicks += 1;
+					document.getElementById("Like").innerHTML = clicks;
+					document.getElementById("Like").style.color = "red";
+				};
+			</script>
+			
+		</body>
+	</head>
+</html>
