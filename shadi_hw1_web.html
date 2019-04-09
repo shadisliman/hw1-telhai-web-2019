@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <style>
+        .pearl { background-color: #f0f0f0; }
+        .profileImage{ height: auto;width: 300px;box-shadow: 0px 3px 6px black;margin: 2px 4px 20px 4px;}
+        .card { height: auto;width: 300px;box-shadow: 0px 3px 6px black;}
+        .card { padding: 5px 10px 5px 10px; border: 1px solid #c0c0c0;
+        ;border-radius: 10px; }
+        .pull-right {float: right; }
+        .pull-left {float: left; }
+        .title, .subtitle { margin: 15px 5px 15spx 5px;  }
+        .text1 {font-style: italic;}
+       
+        .text2 {color:blue ;font-style: italic;text-decoration: underline;}
+        
+        </style>
+        <script>
+                function inc_like() {
+                    var value = parseInt(document.getElementById('like_counter').value, 10);
+                    value = isNaN(value) ? 0 : value;
+                    value++;
+                    document.getElementById('like_counter').value = value;
+                }
+        </script>
+    </head>
+    <body>
+        <div class="pearl card pull-left">
+            <h1 class='title'>angelina jolie</h1>
+            <a href='https://en.wikipedia.org/wiki/Angelina_Jolie'>
+                <img class='profileImage'
+                src="https://www.rollingstone.com/wp-content/uploads/2018/06/angelina-jolie-opens-up-about-life-after-pitt-divorce-45da5f38-e469-40a0-9540-a2b0cc41f321.jpg?crop=900:600&width=440" />
+            </a>
+        
+        <button type="button" onclick="inc_like()">LIKE</button>
+        <input type="text" id="like_counter" value="0"></input>
+        <ul class="text1">
+            <li >
+                Phone number: 0555555555
+            </li>
+            <li>
+                email: angelinq-jolie@telhai.ac.il
+            </li>
+
+        </ul>
+        <h3 class="text2" >
+            Hobbies:
+        </h3>
+        <ul class="text1">
+            <li>
+                swimming
+            </li>
+            <li>
+                Acting
+            </li>
+            
+        </ul>
+    </div>
+    </body>
+</html>
