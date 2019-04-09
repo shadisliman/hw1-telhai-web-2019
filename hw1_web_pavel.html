@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Natalie Portman LikePage hw1</title>
+    <style>
+        .headphoto {
+            float: left;
+        }
+
+        .headphoto img {
+            width: 40%
+        }
+
+        .name_text {
+            text-align: left;
+            font-size: 30px;
+            font-family: Arial;
+        }
+    </style>
+    <script>
+        function inc_like() {
+            var value = parseInt(document.getElementById('like_count').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('like_count').value = value;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="headphoto"><IMG SRC="nat1.jpg"></div>
+    <div class="name_text">
+        Natalie Portman
+    </div>
+    <button type="button" onclick="inc_like()">LIKE</button>
+    <input type="text" id="like_count" value="0"></input>
+    <ul>
+        <li>
+            Phone: 052-462-4175
+        </li>
+        <li>
+            E-Mail: natport@AOL.com
+        </li>
+
+    </ul>
+    <h2>
+        Hobbies:
+    </h2>
+    <ul>
+        <li>
+            Writing
+        </li>
+        <li>
+            Reading
+        </li>
+        <li>
+            Acting
+        </li>
+        <li>
+            Ice skating
+        </li>
+    </ul>
+</body>
+
+</html>
